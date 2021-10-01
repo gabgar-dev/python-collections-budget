@@ -24,3 +24,5 @@ fig,ax=plt.subplots()
 ax.bar(categories, count) #, color=[numpy.random.rand(3,) for _ in range(5)])
 ax.set_title('# of Purchases by Category')
 plt.show()
+
+#invalid
