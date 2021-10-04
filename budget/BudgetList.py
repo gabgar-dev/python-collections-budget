@@ -61,7 +61,7 @@ def main():
     labels = ['Expenses', 'Overages', 'Budget']
     values = [myBudgetList.sum_expenses, myBudgetList.sum_overages, myBudgetList.budget]
     ax.bar(labels, values, color=['green','red','blue'])
-    ax.set_title('Your total expenses v.s total budget')
+    ax.set_title('Your total expenses vs. total budget')
     plt.show()
 
 
