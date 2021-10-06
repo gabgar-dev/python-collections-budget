@@ -6,6 +6,18 @@ def main():
     expenses.read_expenses('data/spending_data.csv')
     divided_for_loop = expenses.categorize_for_loop()
 
+    #Testinga another method
+    divided_set_comp = expenses.categorize_set_comprehension()
+    
+    #Checking if categorized sets are equal
+    if divided_set_comp != divided_for_loop:
+        print ('Sets are NOT equal by == test')
+
+    #Testing sets are equal
+    for a,b in zip(divided_for_loop, divided_set_comp):
+        if a.issubset(b) != b.issubset(a):
+            print ('Sets are NOT equal by == test')
+
 
 if __name__ == "__main__":
     main()
